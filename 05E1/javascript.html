@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading1">lilly</h1>
+    <button onclick="showme()">Click Here</button>
+    <h2 class="classcheck">before...</h2>
+    <p>heyyy paragragh</p>
+    
+    <script>
+        let i=0;
+        
+        function showme(){
+             document.getElementById("heading1").innerHTML="HEYYY LILLY"
+             while(i<10){
+                console.log("hii");
+                i=i+1;
+             }
+             document.body.style.backgroundColor="yellow";
+             document.getElementsByClassName("classcheck")[0].innerHTML="after..."
+             var p=document.createElement("p");
+             p.innerHTML="chal ley";
+             document.body.appendChild(p)
+
+        }
+    </script>
+</body>
+</html>
